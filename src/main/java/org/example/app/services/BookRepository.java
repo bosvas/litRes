@@ -2,6 +2,9 @@ package org.example.app.services;
 
 import org.apache.log4j.Logger;
 import org.example.web.dto.Book;
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -9,10 +12,12 @@ import java.util.List;
 import java.util.Objects;
 
 @Repository
-public class BookRepository implements ProjectRepository<Book> {
+public class BookRepository implements ProjectRepository<Book>, ApplicationContextAware {
 
     private final Logger logger = Logger.getLogger(BookRepository.class);
     private final List<Book> repo = new ArrayList<>();
+
+    private ApplicationContext context;
 
     {
         Book book2=new Book();
@@ -48,7 +53,7 @@ public class BookRepository implements ProjectRepository<Book> {
 
     @Override
     public void store(Book book) {
-        book.setId(String.valueOf(book.hashCode()));
+        book.setId(context.getBean(IdProvider.class).provideId(book));
         if (!(Objects.equals(book.getAuthor(), ""))
                 ||!(Objects.equals(book.getTitle(), ""))
                 ||!(book.getSize()==null)){
@@ -127,5 +132,10 @@ public class BookRepository implements ProjectRepository<Book> {
             return repo.removeAll(booksToDelete);}
         else
             return false;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.context=applicationContext;
     }
 }
