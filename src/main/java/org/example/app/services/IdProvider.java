@@ -7,9 +7,6 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 public class IdProvider implements InitializingBean, DisposableBean, BeanPostProcessor {
 
     Logger logger = Logger.getLogger(IdProvider.class);
@@ -57,13 +54,14 @@ public class IdProvider implements InitializingBean, DisposableBean, BeanPostPro
         return null;
     }
 
-    @PostConstruct
-    public void postConstructIdProvider() {
-        logger.info("PostConstruct annotated method called");
-    }
+//    @PostConstruct
+//    public void postConstructIdProvider() {
+//        logger.info("PostConstruct annotated method called");
+//    }
+//
+//    @PreDestroy
+//    public void preDestroyIdProvider() {
+//        logger.info("PreDestroy annotated method called");
+//    }
 
-    @PreDestroy
-    public void preDestroyIdProvider() {
-        logger.info("PreDestroy annotated method called");
-    }
 }
