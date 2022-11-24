@@ -3,22 +3,26 @@ package org.example.web.controllers;
 import org.apache.log4j.Logger;
 import org.example.app.services.BookService;
 import org.example.web.dto.Book;
+import org.example.web.dto.BookIdToRemove;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping(value = "/books")
 @Scope("singleton")
 public class BookShelfController {
 
-    private Logger logger = Logger.getLogger(BookShelfController.class);
-    private BookService bookService;
+    private final Logger logger = Logger.getLogger(BookShelfController.class);
+    private final BookService bookService;
 
     @Autowired
     public BookShelfController(BookService bookService) {
@@ -29,61 +33,74 @@ public class BookShelfController {
     public String books(Model model) {
         logger.info(this.toString());
         model.addAttribute("book", new Book());
+        model.addAttribute("bookIdToRemove", new BookIdToRemove());
         model.addAttribute("bookList", bookService.getAllBooks());
         return "book_shelf";
     }
 
     @PostMapping("/save")
-    public String saveBook(Book book) {
-        bookService.saveBook(book);
-        logger.info("current repository size: " + bookService.getAllBooks().size());
-        return "redirect:/books/shelf";
+    public String saveBook(@Valid Book book, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) {
+            model.addAttribute("book", book);
+            model.addAttribute("bookIdToRemove", new BookIdToRemove());
+            model.addAttribute("bookList", bookService.getAllBooks());
+            return "book_shelf";
+        } else {
+            bookService.saveBook(book);
+            logger.info("current repository size: " + bookService.getAllBooks().size());
+            return "redirect:/books/shelf";
+        }
     }
 
     @PostMapping("/remove")
-    public String removeBook(@RequestParam(value = "bookIdToRemove") String bookIdToRemove) {
-        if (bookService.removeBookById(bookIdToRemove)) {
-            return "redirect:/books/shelf";
+    public String removeBook(@Valid BookIdToRemove bookIdToRemove, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()){
+            model.addAttribute("book", new Book());
+            model.addAttribute("bookList", bookService.getAllBooks());
+            return "book_shelf";
         } else {
+            bookService.removeBookById(bookIdToRemove.getId());
             return "redirect:/books/shelf";
         }
-    }
 
-    @PostMapping("/removeByRegex")
-    public String removeBookByRegex(@RequestParam(value = "queryRegex") String queryRegex) {
-        if (bookService.removeBookByRegex(queryRegex)) {
-            return "redirect:/books/shelf";
-        } else {
-            return "redirect:/books/shelf";
-        }
     }
-
-    @PostMapping("/removeByAuthor")
-    public String removeBookByAuthor(@RequestParam(value = "author") String author) {
-        if (bookService.removeBookByAuthor(author)) {
-            return "redirect:/books/shelf";
-        } else {
-            return "redirect:/books/shelf";
-        }
-    }
-
-    @PostMapping("/removeByTitle")
-    public String removeBookByTitle(@RequestParam(value = "title") String title) {
-        if (bookService.removeBookByTitle(title)) {
-            return "redirect:/books/shelf";
-        } else {
-            return "redirect:/books/shelf";
-        }
-    }
-
-    @PostMapping("/removeBySize")
-    public String removeBookBySize(@RequestParam(value = "size") int size) {
-        if (bookService.removeBookBySize(size)) {
-            return "redirect:/books/shelf";
-        } else {
-            return "redirect:/books/shelf";
-        }
-    }
-
 
 }
+
+
+
+//    @PostMapping("/removeByRegex")
+//    public String removeBookByRegex(@RequestParam(value = "queryRegex") String queryRegex) {
+//        if (bookService.removeBookByRegex(queryRegex)) {
+//            return "redirect:/books/shelf";
+//        } else {
+//            return "redirect:/books/shelf";
+//        }
+//    }
+//
+//    @PostMapping("/removeByAuthor")
+//    public String removeBookByAuthor(@RequestParam(value = "author") String author) {
+//        if (bookService.removeBookByAuthor(author)) {
+//            return "redirect:/books/shelf";
+//        } else {
+//            return "redirect:/books/shelf";
+//        }
+//    }
+//
+//    @PostMapping("/removeByTitle")
+//    public String removeBookByTitle(@RequestParam(value = "title") String title) {
+//        if (bookService.removeBookByTitle(title)) {
+//            return "redirect:/books/shelf";
+//        } else {
+//            return "redirect:/books/shelf";
+//        }
+//    }
+//
+//    @PostMapping("/removeBySize")
+//    public String removeBookBySize(@RequestParam(value = "size") int size) {
+//        if (bookService.removeBookBySize(size)) {
+//            return "redirect:/books/shelf";
+//        } else {
+//            return "redirect:/books/shelf";
+//        }
+//    }

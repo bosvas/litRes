@@ -47,5 +47,4 @@ public class LoginController {
         model.addAttribute("errorMessage", exception.getMessage());
         return "errors/404";
     }
-
 }
