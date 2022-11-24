@@ -18,10 +18,9 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 public class WebContextConfig implements WebMvcConfigurer {
 
     @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    public void addResourceHandlers(ResourceHandlerRegistry registry){
         registry.addResourceHandler("/**").addResourceLocations("classpath:/images");
-        //<mvc:resources mapping="/**" location="classpath:images"/>
-
+        //  <mvc:resources mapping="/**" location="classpath:images">
     }
 
     @Bean
@@ -38,7 +37,6 @@ public class WebContextConfig implements WebMvcConfigurer {
     public SpringTemplateEngine templateEngine(){
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
-
         return templateEngine;
     }
 
@@ -49,6 +47,6 @@ public class WebContextConfig implements WebMvcConfigurer {
         viewResolver.setOrder(1);
 
         return viewResolver;
-    }
 
+    }
 }
