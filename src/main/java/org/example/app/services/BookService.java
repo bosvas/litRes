@@ -24,23 +24,23 @@ public class BookService {
         bookRepo.store(book);
     }
 
-    public boolean removeBookById(String bookIdToRemove) {
+    public boolean removeBookById(Integer bookIdToRemove) {
         return bookRepo.removeItemById(bookIdToRemove);
     }
 
-    public boolean removeBookByRegex(String queryRegex) {
-        return bookRepo.removeItemByRegex(queryRegex);
-    }
-
-    public boolean removeBookByAuthor(String authorName) {
-        return bookRepo.removeItemByAuthor(authorName);
-    }
-
-    public boolean removeBookByTitle(String title) {
-        return bookRepo.removeItemByTitle(title);
-    }
-
-    public boolean removeBookBySize(int size) {
-        return bookRepo.removeItemBySize(size);
-    }
+//    public boolean removeBookByRegex(String queryRegex) {
+//        return bookRepo.removeItemByRegex(queryRegex);
+//    }
+//
+//    public boolean removeBookByAuthor(String authorName) {
+//        return bookRepo.removeItemByAuthor(authorName);
+//    }
+//
+//    public boolean removeBookByTitle(String title) {
+//        return bookRepo.removeItemByTitle(title);
+//    }
+//
+//    public boolean removeBookBySize(int size) {
+//        return bookRepo.removeItemBySize(size);
+//    }
 }

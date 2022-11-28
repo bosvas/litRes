@@ -1,4 +1,4 @@
-            <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
@@ -10,17 +10,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d861c7b-d5e5-4ca2-ac8b-02ce7bd5b0fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ZnotUsed/app-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/config/AppContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/config/AppSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/config/SecurityInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/config/DbConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WebAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/config/WebContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/config/WebContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/config/AppSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/config/AppSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/IdProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/IdProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/dto/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/dto/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/dto/BookIdToRemove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/dto/BookIdToRemove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book_shelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book_shelf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/config/AppContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/config/AppContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/config/AppSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/config/AppSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/config/SecurityInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/config/SecurityInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/exceptions/BookShelfLoginException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/exceptions/BookShelfLoginException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/IdProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/IdProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/ProjectRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/config/WebContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/config/WebContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/controllers/BookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/controllers/BookShelfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/controllers/ErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/controllers/ErrorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/dto/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/dto/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/dto/BookIdToRemove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/dto/BookIdToRemove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/dto/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/dto/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/config/AppContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/config/AppContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/config/AppSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/config/AppSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/config/SecurityInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/config/SecurityInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/exceptions/BookShelfLoginException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/exceptions/BookShelfLoginException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/IdProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/IdProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/ProjectRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/config/WebContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/config/WebContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/BookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/BookShelfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/ErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/ErrorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/dto/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/dto/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/dto/BookIdToRemove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/dto/BookIdToRemove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/dto/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/dto/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/views/book_shelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/views/book_shelf.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +116,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/BorisVasilev/Desktop/JavaProjects/Skillbox/spring_m2_3"
+    "last_opened_file_path": "C:/Users/BorisVasilev/Desktop/JavaProjects/Skillbox/spring_m2_5"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "H2"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
