@@ -1,12 +1,16 @@
 package org.example.web.dto;
 
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 
 public class Book {
 
     private Integer id;
+    @NotEmpty(message = "every book should have an author! (this field can't be empty)")
+    @Size(max = 25, message = "max length of author name - 25")
     private String author;
+
+    @NotEmpty(message = "every book should have a title! (this field can't be empty)")
+    @Size(max = 25, message = "max length of book title - 25")
     private String title;
     @Digits(integer = 4, fraction = 0)
     private Integer size;
