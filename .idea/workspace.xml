@@ -9,7 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d861c7b-d5e5-4ca2-ac8b-02ce7bd5b0fc" name="Changes" comment="" />
+    <list default="true" id="7d861c7b-d5e5-4ca2-ac8b-02ce7bd5b0fc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/exceptions/FileIsNullException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/exceptions/WrongRegexException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors/wre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/controllers/BookShelfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/controllers/BookShelfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book_shelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book_shelf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/ProjectRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/controllers/BookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/controllers/BookShelfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/ProjectRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/BookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/BookShelfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/views/book_shelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/views/book_shelf.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,30 +74,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/BorisVasilev/Desktop/JavaProjects/Skillbox/spring_m2_5&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/BorisVasilev/Desktop/JavaProjects/Skillbox/skillboxMyProj/src/main/webapp/WEB-INF/views/errors"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;H2&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "H2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.web.dto" />
       <recent name="org.example.app.exceptions" />
       <recent name="org.example.web.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\BorisVasilev\Desktop\JavaProjects\Skillbox\skillboxMyProj\src\main\webapp\WEB-INF\views\errors" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\BorisVasilev\Desktop\JavaProjects\Skillbox\skillboxMyProj\src\main\ZnotUsed" />
@@ -241,7 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669673404067</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1_8.1 git bug fix">
+      <created>1669674155600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669674155600</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1_8.2 git bug fix 2">
+      <created>1669674167664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669674167664</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +305,8 @@
     <MESSAGE value="1_6 Binding results add. validation of size add. validation of id add WITH BUGS" />
     <MESSAGE value="1_7 JDBC + DB - H2 add" />
     <MESSAGE value="1_8 useless download files button add" />
-    <option name="LAST_COMMIT_MESSAGE" value="1_8 useless download files button add" />
+    <MESSAGE value="1_8.1 git bug fix" />
+    <MESSAGE value="1_8.2 git bug fix 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="1_8.2 git bug fix 2" />
   </component>
 </project>

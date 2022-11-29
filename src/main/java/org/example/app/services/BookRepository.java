@@ -1,6 +1,7 @@
 package org.example.app.services;
 
 import org.apache.log4j.Logger;
+import org.example.app.exceptions.WrongRegexException;
 import org.example.web.dto.Book;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -31,13 +32,13 @@ public class BookRepository implements ProjectRepository<Book>, ApplicationConte
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.context=applicationContext;
+        this.context = applicationContext;
     }
 
 
     @Override
     public List<Book> retreiveAll() {
-        List<Book> books = jdbcTemplate.query("SELECT * FROM books", (ResultSet rs, int rowNum)->{
+        List<Book> books = jdbcTemplate.query("SELECT * FROM books", (ResultSet rs, int rowNum) -> {
             Book book = new Book();
             book.setId(rs.getInt("id"));
             book.setAuthor(rs.getString("author"));
@@ -68,27 +69,34 @@ public class BookRepository implements ProjectRepository<Book>, ApplicationConte
         return true;
     }
 
+    @Override
+    public boolean removeItemByRegex(String queryRegex) throws SQLException {
+        List<Book> booksToDelete = new ArrayList<>();
+        for (Book book : retreiveAll()) {
+            if (book.getAuthor().equals(queryRegex) || book.getTitle().equals(queryRegex) || book.getSize().toString().equals(queryRegex)) {
+                booksToDelete.add(book);
+            }
+        }
+        if (!booksToDelete.isEmpty()) {
+            String sql = "delete from books where id = ?";
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:mem:book_store", "sa", "");
+
+
+            for (Book book : booksToDelete) {
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setInt(1, book.getId());
+                preparedStatement.executeUpdate();
+            }
+
+            logger.info("remove book completed: " + booksToDelete);
+            return true;
+        } else
+           return false;
+    }
+
 }
 
-
-
-//    @Override
-//    public boolean removeItemByRegex(String queryRegex) {
-//        List<Book> booksToDelete = new ArrayList<>();
-//        for (Book book : retreiveAll()) {
-//            if (book.getAuthor().equals(queryRegex)||
-//                    book.getTitle().equals(queryRegex)||
-//                    book.getSize().toString().equals(queryRegex)) {
-//                booksToDelete.add(book);
-//            }
-//        }
-//        if (!booksToDelete.isEmpty()){
-//        logger.info("remove book completed: " + booksToDelete);
-//       return repo.removeAll(booksToDelete);}
-//            return true;
-//        else
-//            return false;
-//    }
 
 //    @Override
 //    public boolean removeItemByAuthor(String author) {

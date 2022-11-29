@@ -1,5 +1,8 @@
 package org.example.app.services;
 
+import org.example.app.exceptions.WrongRegexException;
+
+import java.sql.SQLException;
 import java.util.List;
 
 public interface ProjectRepository<T> {
@@ -9,7 +12,7 @@ public interface ProjectRepository<T> {
 
     boolean removeItemById(Integer bookIdToRemove);
 
-//    boolean removeItemByRegex(String queryRegex);
+    boolean removeItemByRegex(String queryRegex) throws SQLException;
 //
 //    boolean removeItemByAuthor(String authorName);
 //

@@ -4,6 +4,7 @@ import org.example.web.dto.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 @Service
@@ -28,9 +29,9 @@ public class BookService {
         return bookRepo.removeItemById(bookIdToRemove);
     }
 
-//    public boolean removeBookByRegex(String queryRegex) {
-//        return bookRepo.removeItemByRegex(queryRegex);
-//    }
+    public boolean removeBookByRegex(String queryRegex) throws SQLException {
+        return bookRepo.removeItemByRegex(queryRegex);
+    }
 //
 //    public boolean removeBookByAuthor(String authorName) {
 //        return bookRepo.removeItemByAuthor(authorName);
