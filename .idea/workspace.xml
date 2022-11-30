@@ -10,25 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d861c7b-d5e5-4ca2-ac8b-02ce7bd5b0fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/exceptions/FileIsNullException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/app/exceptions/WrongRegexException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors/wre.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/services/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/services/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/controllers/BookShelfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/controllers/BookShelfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book_shelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book_shelf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app/services/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app/services/ProjectRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/web/controllers/BookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/web/controllers/BookShelfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/ProjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/app/services/ProjectRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/BookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/classes/org/example/web/controllers/BookShelfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/views/book_shelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_mvc/WEB-INF/views/book_shelf.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +64,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/BorisVasilev/Desktop/JavaProjects/Skillbox/skillboxMyProj/src/main/webapp/WEB-INF/views/errors"
+    "last_opened_file_path": "C:/Users/BorisVasilev/Desktop/JavaProjects/Skillbox/time_serv_m3_3",
+    "spring.configuration.checksum": "7a05a9dd7c56061fdfdc98fab925bb0e"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -207,6 +190,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669231271750</updated>
       <workItem from="1669231273177" duration="22590000" />
+      <workItem from="1669802135445" duration="2782000" />
     </task>
     <task id="LOCAL-00001" summary="1_1 First Look with XML Configuration">
       <created>1669239146121</created>
@@ -278,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669674167664</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1_9 exception regex delete handler. exception file null download handler. validation of author and title">
+      <created>1669733147740</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669733147740</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +298,7 @@
     <MESSAGE value="1_8 useless download files button add" />
     <MESSAGE value="1_8.1 git bug fix" />
     <MESSAGE value="1_8.2 git bug fix 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="1_8.2 git bug fix 2" />
+    <MESSAGE value="1_9 exception regex delete handler. exception file null download handler. validation of author and title" />
+    <option name="LAST_COMMIT_MESSAGE" value="1_9 exception regex delete handler. exception file null download handler. validation of author and title" />
   </component>
 </project>
